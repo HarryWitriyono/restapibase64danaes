@@ -1,4 +1,7 @@
-<?php
+<?php 
+if (!isset($_GET['lihattabelnasabah'])) {
+	exit();
+}
 function aesenc($pl){
 	$algo='aes-128-cbc-hmac-sha1';
 	$kunci='1234567890111213';
